@@ -64,8 +64,8 @@ internal struct List: Fragment {
                 let fallbackIndex = reader.currentIndex
                 let itemIndentationLength = try reader.readWhitespaces().count
 
-                if itemIndentationLength < indentationLength {'
-                    reader.moveToIndex(fallbackIndex)'
+                if itemIndentationLength < indentationLength {
+                    reader.moveToIndex(fallbackIndex)
                     return list
                 } else if itemIndentationLength == indentationLength {
                     continue
