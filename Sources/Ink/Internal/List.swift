@@ -71,8 +71,6 @@ internal struct List: Fragment {
                     continue
                 }
 
-                let fallbackIndex = reader.currentIndex
-
                 do {
                     let nestedList = try List.read(
                         using: &reader, indentationLength:
